@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <title>Title</title>
+  <link rel="SHORTCUT ICON" href="/favicon.ico" />
+  <style type="text/css" media="screen">
+    /* from Eric Meyer: v1.0 | 20080212 */
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{background:transparent;border:0;font-size:100%;font-weight:inherit;margin:0;outline:0;padding:0;text-decoration:none;vertical-align:baseline}
+    body{line-height:1}
+    ol, ul{list-style:none}
+    blockquote, q{quotes:none}
+    blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+    /* remember to define focus styles! */
+    :focus{outline:0}
+    /* remember to highlight inserts somehow! */
+    ins{text-decoration:none}
+    del{text-decoration:line-through}
+    table{border-collapse:collapse;border-spacing:0}
+    /* end of Eric Meyer's CSS Reset */
+
+    body, input, select, textarea{font-family:'helvetica neue',helvetica,arial,sans-serif;font-size:16px;line-height:20px}
+    
+    article{margin:50px auto;padding:50px 0;width:960px;}
+    
+    p{margin:0 auto;padding:5px 10px 15px;max-width:960px;}
+        
+    .color0{background:red}
+    .color1{background:rgb(249, 250, 241);border: 1px solid rgb(185, 213, 120);}
+    .color2{background:rgb(149, 250, 241);border: 1px solid rgb(85, 213, 120);}
+    .color3{background:green}
+    .color4{background:blue}
+
+    a[data-footnote]{padding:0 2px;}
+    aside a[data-footnote]{background:rgb(185, 213, 120);}
+    aside aside{margin:2% -5% 2% 0;width:50%}
+    aside p:last-child{padding-bottom:5px}
+
+    aside{clear:both;display:block;float:right;font-size:90%;margin-bottom:10px;margin-left:20px;width:40%;}
+
+
+  </style>
+
+</head>
+<body>
+  <article>
+  <p>The general idea: A block of text has <a data-footnote=1>inline callouts</a> that can be safely excerpted and referenced. A static anchor within the text displays the originating branch point. A line connects the callout to the anchor.</p>
+  <p>Asides have a <a data-footnote=2>certain color</a>, and child asides within a parent have the same hue and saturation as the parent, but are lighter<a data-footnote=3>yay, <a href="http://mothereffinghsl.com">HSL</a>!</a>.</p>
+  
+  
+  <aside data-anchor=1><p>callouts are asides and parentheticals that build on the <a data-footnote=1a>primary text</a></p></aside>
+    <aside data-anchor=1a><p>or the secondary or tertiary</p></aside>
+  <aside data-anchor=2><p>randomly assigned from a predefined set</p></aside>
+  
+  
+  <hr />
+  
+  <p>Okay. Hold up.</p>
+  
+  <p>I don't need to mess around with arrows AT ALL. Yay/argh!</p>
+  
+  <p>The original only uses colors.</p>
+  <ul>
+    <li>
+      <ul>
+        <li>border: rgb(185, 213, 120)</li>
+        <li>interior: rgb(249, 250, 241)</li>
+        <li>inside block:rgb(235, 242, 215)</li>
+      </ul>
+    </li>
+  </ul>  
+  
+  <p>If the word count in the aside is under X, it can get away with being width w1.</p>
+  <p>If the aside has a child, it can be adjusted out to the left, (margin-right added); Child can be floated far right with negative right margin.</p>
+  
+  </article>
+  
+  <script src="lib/jquerymin.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/colormin.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+var colors = ["rgb(239, 121, 1)", "rgb(185, 213, 120)", "rgb(213, 68, 33)", "rgb(152, 191, 13)", "rgb(1, 176, 236)", "rgb(116, 73, 241)", "rgb(177, 71, 163)", "rgb(246, 180, 2)", "rgb(141, 141, 141)"]
+$(function(){
+  
+  $('aside').each(function(){
+    var originalId = $(this).attr('data-anchor');
+    var id = parseInt(originalId, 10);
+//    alert(id);
+    var colorId = id%colors.length;
+//    alert(colorId);
+    var color = colors[colorId];
+    var anchor = $('[data-footnote='+originalId+']');
+    anchor.addClass('color'+colorId);
+      $(this).appendTo(anchor).addClass('color'+colorId);
+  });
+  
+  
+  
+  
+  var i = 0;
+  $('p').each(function(){
+    if($(this).children('.anchor').length === 0){
+      $(this).addClass('no-anchors')
+    }else{
+      $(this).addClass('anchors')
+    };
+  });
+  $('.aside').addClass('modified').each(function(i){
+    var depth = $(this).parents('.aside').length
+    if(depth === 0){$(this).addClass('top');}else{$(this).addClass('child'+depth);}
+    $(this).attr('id', 'target'+i);
+    i++;
+  });  
+  for(var i = 0; i < $('.aside').length; i++){
+    console.log(i)
+    var a = $("#anchor"+i)
+    var t = $("#target"+i)
+    a.addClass("color"+(""+i % colors.length));
+    t.addClass("color"+(""+i % colors.length));
+  }
+  
+});
+</script>
+</body>
+</html>
