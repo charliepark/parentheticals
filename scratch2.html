@@ -21,30 +21,28 @@
     table{border-collapse:collapse;border-spacing:0}
     /* end of Eric Meyer's CSS Reset */
 
-    body, input, select, textarea{font-family:georgia,serif;font-size:14px;line-height:20px}
+    body, input, select, textarea{font-family:georgia,serif;font-size:14px;line-height:1.5em}
     
-    article{margin:50px auto;padding:50px 0;width:960px;}
-    
-    p{margin:0 auto;padding:5px 8px 15px;width:600px;text-align:justify}
-    aside p{text-align:left;width:auto}
-    .color0{background:rgb(249, 250, 241);border: 1px solid rgb(185, 213, 120);}
-    aside.color0 a[data-footnote]{border-color:rgb(235, 241, 214);background:rgb(235, 241, 214);}
-    .color1{background:rgb(250, 246, 239);border: 1px solid rgb(209, 167, 112);}
-    aside.color1 a[data-footnote]{border-color:rgb(235, 241, 214);background:rgb(235, 241, 214);}
-    .color2{background:rgb(246, 245, 249);border: 1px solid rgb(182, 167, 202);}
-    aside.color2 a[data-footnote]{border-color:rgb(235, 241, 214);background:rgb(235, 241, 214);}
-    .color3{background:rgb(250, 250, 236);border: 1px solid rgb(208, 223,  42);}
-    aside.color3 a[data-footnote]{border-color:rgb(235, 241, 214);background:rgb(235, 241, 214);}
-    .color4{background:rgb(249, 246, 246);border: 1px solid rgb(212, 165, 184);}
-    aside.color4 a[data-footnote]{border-color:rgb(235, 241, 214);background:rgb(235, 241, 214);}
-    
-
     a[data-footnote]{padding:0 2px;}
-    aside aside{margin:2% -5% 2% 0;width:50%}
+    article{margin:50px auto;padding:50px 0;width:700px;}
+    aside{clear:both;display:block;float:right;font-size:90%;margin:10px 0 10px 20px;width:300px;}
+    aside aside{line-height:1.4;margin:.5em -10% 0 .5em;width:50%}
+
+    p{margin:0 auto;padding:5px 8px 15px;text-align:justify;margin-right:100px}
+    aside p{float:none;margin:0;text-align:left;width:auto}
     aside p:last-child{padding-bottom:5px}
 
-    aside{clear:both;display:block;float:right;font-size:90%;margin:10px 0 10px 20px;width:300px;}
 
+    .color0{background:rgb(249, 250, 241);border: 1px solid rgb(185, 213, 120);}
+      aside.color0 a.color0{background:rgba(185, 213, 120, 0.3)}
+    .color1{background:rgb(250, 246, 239);border: 1px solid rgb(209, 167, 112);}
+      aside.color1 a.color1{background:rgba(209, 167, 112, 0.3)}
+    .color2{background:rgb(246, 245, 249);border: 1px solid rgb(182, 167, 202);}
+      aside.color2 a.color2{background:rgba(182, 167, 202, 0.3)}
+    .color3{background:rgb(250, 250, 236);border: 1px solid rgb(208, 223,  42);}
+      aside.color3 a.color3{background:rgba(208, 223,  42, 0.3)}
+    .color4{background:rgb(249, 246, 246);border: 1px solid rgb(212, 165, 184);}
+      aside.color4 a.color4{background:rgba(212, 165, 184, 0.3)}
 
   </style>
 
