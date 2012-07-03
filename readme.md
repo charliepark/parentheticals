@@ -1,4 +1,3 @@
 # Parentheticals
 
-This is just an experiment at the moment. Bear with me.
-
+Parentheticals is a jQuery plugin that allows you to style footnotes inline with the text.
