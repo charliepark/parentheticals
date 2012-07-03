@@ -7,7 +7,7 @@ jQuery.fn.parentheticals = function(){
   $('aside').each(function(){
 
     // get the original anchor reference
-    var originalId = $(this).attr('data-anchor');
+    var originalId = $(this).attr('data-footnote');
 
     // clean it up so it's just a numeral (e.x. "0a" => 0)
     var id = parseInt(originalId, 10);
@@ -17,7 +17,7 @@ jQuery.fn.parentheticals = function(){
     var colorId = id%5;
 
     // find the anchor that referenced this footnote
-    var anchor = $('[data-footnote='+originalId+']');
+    var anchor = $('[data-anchor='+originalId+']');
 
     // and style it
     anchor.addClass('color'+colorId);

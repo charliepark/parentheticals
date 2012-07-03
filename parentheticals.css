@@ -1,4 +1,4 @@
-a[data-footnote]{padding:0 2px;}
+a[data-anchor]{padding:0 2px;}
 article{margin:50px auto;padding:50px 0;width:650px;}
 aside{float:right;font-size:12px;line-height:18px;margin:10px 0 10px 20px;width:50%;}
 aside aside{line-height:1.4;margin:.5em -10% .25em 10px;width:40%}

@@ -18,8 +18,8 @@ Each bit of anchor text has a color-coordinated footnote. To link the two up, we
 
 Using a line from earlier in the readme:
 
-* Anchor text should be indicated like this: `<a data-footnote=0>I'd love to move it off of jQuery as a dependency.</a>`
-* Footnotes should be indicated like this: `<aside data-anchor=0>Feel free to send a pull request if you're comfortable with JavaScript and are interested in a small project.</aside>`
+* Anchor text should be indicated like this: `<a data-anchor=0>I'd love to move it off of jQuery as a dependency.</a>`
+* Footnotes should be indicated like this: `<aside data-footnote=0>Feel free to send a pull request if you're comfortable with JavaScript and are interested in a small project.</aside>`
 
 
 ### Your CSS
