@@ -1,0 +1,19 @@
+a[data-footnote]{padding:0 2px;}
+article{margin:50px auto;padding:50px 0;width:650px;}
+aside{float:right;font-size:12px;line-height:18px;margin:10px 0 10px 20px;width:50%;}
+aside aside{line-height:1.4;margin:.5em -10% .25em 10px;width:40%}
+
+p{margin:0 auto;padding:5px 8px 15px;text-align:justify;}
+aside p{float:none;margin:0;text-align:left;width:auto}
+aside p:last-child{padding-bottom:5px}
+
+.color0{background:rgb(249, 250, 241);border: 1px solid rgb(185, 213, 120)}
+  aside.color0 a.color0{background:rgba(185, 213, 120, 0.3)}
+.color1{background:rgb(250, 246, 239);border: 1px solid rgb(209, 167, 112)}
+  aside.color1 a.color1{background:rgba(209, 167, 112, 0.3)}
+.color2{background:rgb(246, 245, 249);border: 1px solid rgb(182, 167, 202)}
+  aside.color2 a.color2{background:rgba(182, 167, 202, 0.3)}
+.color3{background:rgb(250, 250, 236);border: 1px solid rgb(208, 223,  42)}
+  aside.color3 a.color3{background:rgba(208, 223,  42, 0.3)}
+.color4{background:rgb(249, 246, 246);border: 1px solid rgb(212, 165, 184)}
+  aside.color4 a.color4{background:rgba(212, 165, 184, 0.3)}
