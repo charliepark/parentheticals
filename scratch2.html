@@ -65,17 +65,11 @@
   </article>
   
 <script src="lib/jquerymin.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib/parentheticals.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
-$(function(){  
-  $('aside').each(function(){
-    var originalId = $(this).attr('data-anchor');
-    var id = parseInt(originalId, 10);  // parseInt to take care of any sub-asides (e.x. "data-anchor=0a")
-    var colorId = id%5;                 // 5 as there are 5 colors listed in the CSS
-    var anchor = $('[data-footnote='+originalId+']');
-    anchor.addClass('color'+colorId);
-    $(this).appendTo(anchor).addClass('color'+colorId);
+  $(function(){
+    $().parentheticals();
   });
-});
 </script>
 </body>
 </html>
