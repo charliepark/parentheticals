@@ -1,7 +1,7 @@
 a[data-anchor]{padding:0 2px;}
 article{margin:50px auto;padding:50px 0;width:650px;}
 aside{float:right;font-size:12px;line-height:18px;margin:10px 0 10px 20px;width:50%;}
-aside aside{line-height:1.4;margin:.5em -10% .25em 10px;width:40%}
+aside aside{line-height:16px;margin:5px -10% 3px 10px;width:40%}
 
 p{margin:0 auto;padding:5px 8px 10px;text-align:justify;}
 aside p{float:none;margin:0;padding:5px 8px 10px;text-align:left;width:auto}
