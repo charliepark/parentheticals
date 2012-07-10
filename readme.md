@@ -32,3 +32,7 @@ You'll need to add the CSS that lives in [parentheticals.css](https://raw.github
 ### Your JavaScript
 
 As I mentioned, you'll need to call jQuery first. Then, you'll need to reference [parentheticals.js](https://raw.github.com/charliepark/parentheticals/master/parentheticals.js).
+
+### Want to see an example?
+
+When I get some time, I'll be making a GitHub project page for this, but for now, if you clone this project to your local machine, just open up the file at assets/example.html, and you'll be able to see it. I copied the original sample page from *The Atlantic*.
