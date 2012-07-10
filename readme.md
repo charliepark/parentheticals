@@ -8,18 +8,20 @@ This text is from David Foster Wallace's 2005 piece in *The Atlantic*, called "[
 
 ## Using Parentheticals
 
-As Parentheticals is currently a jQuery plugin, you'll need to be referencing it. I'd love to move it off of jQuery as a dependency. (Feel free to send a pull request if you're comfortable with JavaScript and are interested in a small project.)
+As Parentheticals is currently a jQuery plugin, you'll need to reference jQuery. **I'd love to move it off of jQuery as a dependency.** (Feel free to send a pull request if you're comfortable with JavaScript and are interested in a small project.)
 
 ### Basic Principles
 
-Each bit of anchor text has a color-coordinated footnote. To link the two up, we use the HTML5 data attributes of "data-footnote" (on the anchor) and "data-anchor" (on the footnote). Each has a numeric value. You may also append letters on, in situations where you need to nest your footnotes.
+Each bit of anchor text has a color-coordinated footnote. To link the two up, we use the HTML5 data attributes of "data-anchor=x" (on the anchor) and "data-footnote=x" (on the footnote). The code in Parentheticals will go through and match up each of the footnotes with its anchor, then position them within the document.
+
+You may also nest asides, when one aside needs to include another aside.
 
 ### Your HTML
 
-Using a line from earlier in the readme:
+Using a line of textfrom earlier in the readme:
 
-* Anchor text should be indicated like this: `<a data-anchor=0>I'd love to move it off of jQuery as a dependency.</a>`
-* Footnotes should be indicated like this: `<aside data-footnote=0>Feel free to send a pull request if you're comfortable with JavaScript and are interested in a small project.</aside>`
+* Anchor text should be indicated like this: `<a data-anchor=x>I'd love to move it off of jQuery as a dependency.</a>`
+* Footnotes should be indicated like this: `<aside data-footnote=x>Feel free to send a pull request if you're comfortable with JavaScript and are interested in a small project.</aside>`
 
 
 ### Your CSS
