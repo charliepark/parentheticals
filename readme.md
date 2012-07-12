@@ -35,6 +35,10 @@ You can also add in whatever custom CSS you like (say, to make the asides' text 
 
 As I mentioned, you'll need to call jQuery first. Then, you'll need to reference [parentheticals.js](https://raw.github.com/charliepark/parentheticals/master/parentheticals.js).
 
+If you want to, you can link to the JavaScript file simply by placing this before your `</body>` tag:
+
+    <script type="text/javascript" charset="utf-8" src="https://raw.github.com/charliepark/parentheticals/master/parentheticals.js">
+
 ### Want to see an example?
 
 When I get some time, I'll make a GitHub project page for this, but for now, if you clone this project to your local machine, just open up the file at assets/example.html, and you'll be able to see it. I copied the original sample page from *The Atlantic*.
