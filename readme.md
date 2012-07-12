@@ -8,7 +8,7 @@ Back in 2005, David Foster Wallace wrote a piece for *The Atlantic*, "[Host](htt
 
 <img src="https://github.com/charliepark/parentheticals/raw/master/assets/parentheticals_example.png" alt="Some of the same text as the earlier example, but rendered with the Parentheticals JavaScript library." />
 
-You can see an example of a whole page (PDF) from that article, [here](https://github.com/charliepark/parentheticals/raw/master/assets/WallaceAtlanticPage5.pdf)):
+You can see [an example of a whole page (PDF)](https://github.com/charliepark/parentheticals/raw/master/assets/WallaceAtlanticPage5.pdf) from that article.
 
 
 ## Using Parentheticals
