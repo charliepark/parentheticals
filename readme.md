@@ -41,7 +41,7 @@ As I mentioned, you'll need to call jQuery first. Then, you'll need to reference
 
 If you want to, you can link to the JavaScript file simply by placing this before your `</body>` tag:
 
-    <script type="text/javascript" charset="utf-8" src="https://raw.github.com/charliepark/parentheticals/master/parentheticals.js">
+    <script type="text/javascript" charset="utf-8" src="https://raw.github.com/charliepark/parentheticals/master/parentheticals.js"></script>
 
 ### Want to see an example?
 
