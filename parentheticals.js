@@ -4,7 +4,6 @@ jQuery.fn.parentheticals = function(){
   "use strict";
 
   // assign all of the anchors and footnotes a value
-
   var i=0;
   $('[data-anchor=x]').each(function(){
     $(this).attr('data-anchor', i);
