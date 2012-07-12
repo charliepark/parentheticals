@@ -3,7 +3,7 @@
 jQuery.fn.parentheticals = function(){
   "use strict";
 
-  // // assign all of the anchors and footnotes a value
+  // assign all of the anchors and footnotes a value
 
   var i=0;
   $('[data-anchor=x]').each(function(){
@@ -16,8 +16,8 @@ jQuery.fn.parentheticals = function(){
     i++;
   });  
 
-  // for each "aside" element with the data attribute "anchor"
-  $('aside').each(function(){
+  // for each "aside" element with the data attribute "footnote"
+  $('[data-footnote]').each(function(){
 
     // get the original anchor reference
     var originalId = $(this).attr('data-footnote');
