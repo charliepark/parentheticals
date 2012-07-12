@@ -36,7 +36,7 @@ As I mentioned, you'll need to call jQuery first. Then, you'll need to reference
 
 ### Want to see an example?
 
-When I get some time, I'll be making a GitHub project page for this, but for now, if you clone this project to your local machine, just open up the file at assets/example.html, and you'll be able to see it. I copied the original sample page from *The Atlantic*.
+When I get some time, I'll make a GitHub project page for this, but for now, if you clone this project to your local machine, just open up the file at assets/example.html, and you'll be able to see it. I copied the original sample page from *The Atlantic*.
 
 ### Nesting Asides
 
