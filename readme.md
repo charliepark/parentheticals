@@ -17,6 +17,8 @@ As Parentheticals is currently a jQuery plugin, you'll need to reference jQuery 
 
 Each bit of anchor text has a color-coordinated footnote. To link the two up, we use the HTML5 data attributes of "data-anchor=x" (on the anchor) and "data-footnote=x" (on the footnote). The code in Parentheticals will go through and match up each of the footnotes with its anchor, then positions each footnote within the document, so that it's close to its corresponding anchor.
 
+You can give each anchor (and its footnote) a specific numeric value (0, 1, 2, etc.) instead of "x", but if a document is going through active editing, I suggest simply putting in "data-anchor=x" and "data-footnote=x". Parentheticals.js is smart and will go through and automatically assign numbers to any data value of "x", so as long as your anchors and footnotes are in the correct order, they'll line up automatically.
+
 ### Your HTML
 
 Using a line of text from the screenshots above:
