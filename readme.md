@@ -8,7 +8,7 @@ This text is from David Foster Wallace's 2005 piece in *The Atlantic*, called "[
 
 Here's a screenshot of what it looks like when rendered dynamically with Parentheticals.js:
 
-![Some of the same text as the earlier example, but rendered with the Parentheticals JavaScript library.](https://github.com/charliepark/parentheticals/raw/master/assets/parentheticals_example_.png)
+![Some of the same text as the earlier example, but rendered with the Parentheticals JavaScript library.](https://github.com/charliepark/parentheticals/raw/master/assets/parentheticals_example.png)
 
 
 
