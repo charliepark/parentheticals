@@ -1,34 +1,35 @@
 # Parentheticals
 
-Parentheticals is a jQuery plugin that allows you to style footnotes inline with the text. A picture will make more sense. Here's a sample of a PDF version of the original article as it appeared in *The Atlantic*:
+Back in 2005, David Foster Wallace wrote a piece for *The Atlantic*, "[Host](http://www.theatlantic.com/magazine/archive/2005/04/host/3812/?single_page=true)". To include his footnotes in a present-but-non-intrusive way, the typesetters at the magazine used color-coded callouts that visually linked the anchor text with the corresponding footnote. A picture will make more sense. Here's a sample of a PDF version of the original article as it appeared in *The Atlantic*:
 
 ![A view of color-coded inline asides. Green text in an anchor is visually linked to a green footnote, displayed on the side of the primary text.](https://github.com/charliepark/parentheticals/raw/master/assets/dfw-host-screenshot.png)
 
-And here's a screenshot of what it looks like when rendered dynamically with Parentheticals.js:
+**Parentheticals is a jQuery plugin that mimics the layout approach from DFW's piece.** Here's a screenshot of what it looks like when rendered dynamically with Parentheticals.js:
 
-<img src="https://github.com/charliepark/parentheticals/raw/master/assets/parentheticals_example.png" style="margin-left:85px" alt="Some of the same text as the earlier example, but rendered with the Parentheticals JavaScript library." />
+<img src="https://github.com/charliepark/parentheticals/raw/master/assets/parentheticals_example.png" alt="Some of the same text as the earlier example, but rendered with the Parentheticals JavaScript library." />
 
-This text is from David Foster Wallace's 2005 article, "[Host](http://www.theatlantic.com/magazine/archive/2005/04/host/3812/?single_page=true)". I tried, with this plugin, to replicate the style from the print version as closely as possible. You can see an example of a whole page (PDF) from that article, [here](https://github.com/charliepark/parentheticals/raw/master/assets/WallaceAtlanticPage5.pdf)):
+You can see an example of a whole page (PDF) from that article, [here](https://github.com/charliepark/parentheticals/raw/master/assets/WallaceAtlanticPage5.pdf)):
 
 
 ## Using Parentheticals
 
-As Parentheticals is currently a jQuery plugin, you'll need to reference jQuery. **I'd love to move it off of jQuery as a dependency.** (Feel free to send a pull request if you're comfortable with JavaScript and are interested in a small project.)
+As Parentheticals is currently a jQuery plugin, you'll need to reference jQuery in your project. **I'd love to move it off of jQuery as a dependency.** (Feel free to send a pull request if you're comfortable with JavaScript and are interested in a small project.)
 
 Each bit of anchor text has a color-coordinated footnote. To link the two up, we use the HTML5 data attributes of "data-anchor=x" (on the anchor) and "data-footnote=x" (on the footnote). The code in Parentheticals will go through and match up each of the footnotes with its anchor, then positions each footnote within the document, so that it's close to its corresponding anchor.
 
 ### Your HTML
 
-Using a line of text from earlier in the readme:
+Using a line of text from the screenshots above:
 
-* Anchor text should be indicated like this: `<a data-anchor=x>I'd love to move it off of jQuery as a dependency.</a>`
-* Footnotes should be indicated like this: `<aside data-footnote=x>Feel free to send a pull request if you're comfortable with JavaScript and are interested in a small project.</aside>`
+* Anchor text should be indicated like this: `<a data-anchor=x>on which most syndicated and large-market political talk radio is modeled</a>`
+* Footnotes should be indicated like this: `<aside data-footnote=x><p>PURELY INFORMATIVE  It&rsquo;s true that there are, ...</p></aside>`
 
 
 ### Your CSS
 
 You'll need to add the CSS that lives in [parentheticals.css](https://raw.github.com/charliepark/parentheticals/master/parentheticals.css).
 
+You can also add in whatever custom CSS you like (say, to make the asides' text size even smaller, or to change the colors used, or whatever.)
 
 ### Your JavaScript
 
