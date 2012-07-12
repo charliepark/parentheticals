@@ -18,7 +18,7 @@ You may also nest asides, when one aside needs to include another aside.
 
 ### Your HTML
 
-Using a line of textfrom earlier in the readme:
+Using a line of text from earlier in the readme:
 
 * Anchor text should be indicated like this: `<a data-anchor=x>I'd love to move it off of jQuery as a dependency.</a>`
 * Footnotes should be indicated like this: `<aside data-footnote=x>Feel free to send a pull request if you're comfortable with JavaScript and are interested in a small project.</aside>`
