@@ -6,6 +6,12 @@ Parentheticals is a jQuery plugin that allows you to style footnotes inline with
 
 This text is from David Foster Wallace's 2005 piece in *The Atlantic*, called "[Host](http://www.theatlantic.com/magazine/archive/2005/04/host/3812/?single_page=true)". I tried, with this plugin, to replicate the style from the print version as closely as possible. You can see an example of a whole page (PDF) from that article, [here](https://github.com/charliepark/parentheticals/raw/master/assets/WallaceAtlanticPage5.pdf)):
 
+Here's a screenshot of what it looks like when rendered dynamically with Parentheticals.js:
+
+![Some of the same text as the earlier example, but rendered with the Parentheticals JavaScript library.](https://github.com/charliepark/parentheticals/raw/master/assets/parentheticals_example_.png)
+
+
+
 ## Using Parentheticals
 
 As Parentheticals is currently a jQuery plugin, you'll need to reference jQuery. **I'd love to move it off of jQuery as a dependency.** (Feel free to send a pull request if you're comfortable with JavaScript and are interested in a small project.)
