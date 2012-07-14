@@ -19,6 +19,7 @@ jQuery.fn.parentheticals = function(){
   $('[data-footnote]').each(function(){
 
     // get the original anchor reference
+    // use attr() instead of data() as it might have updated since the DOM loaded
     var originalId = $(this).attr('data-footnote');
 
     // clean it up so it's just a numeral (e.x. "0a" => 0)
@@ -35,6 +36,6 @@ jQuery.fn.parentheticals = function(){
     anchor.addClass('color'+colorId);
 
     // (also, style the footnote itself) and attach it to the referring anchor
-    $(this).appendTo(anchor).addClass('color'+colorId);
+    $(this).prependTo(anchor).addClass('color'+colorId);
   });  
 };
