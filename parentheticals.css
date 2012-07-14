@@ -1,5 +1,5 @@
 a[data-anchor]{padding:0 2px;}
-aside{clear:right;float:right;font-size:.85em;line-height:18px;margin:0px 0 10px 20px;width:300px;}
+aside{clear:right;float:right;font-size:.85em;font-weight:normal;line-height:18px;margin:0px 0 10px 20px;width:300px;}
 aside aside{line-height:1.2;margin:5px -10% 3px 10px;width:40%}
 
 p{margin:0 auto;padding:5px 8px 10px;text-align:justify;}
