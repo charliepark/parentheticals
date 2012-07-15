@@ -8,7 +8,7 @@ aside p:last-child{padding-bottom:5px}
 
 /* Keep the following sorted in this order */
 
-.color4, .color4 [data-anchor], .color4 [data-footnote]{background:rgb(249, 246, 246);border: 1px solid rgb(212, 165, 184)}
+.color4, .color4 [data-anchor], .color4 [data-footnote], .color4 .color0 [data-footnote]{background:rgb(249, 246, 246);border: 1px solid rgb(212, 165, 184)}
   .color4 [data-anchor]{background:rgba(212, 165, 184, 0.3)}
 
 .color3, .color3 [data-anchor], .color3 [data-footnote]{background:rgb(250, 250, 236);border: 1px solid rgb(208, 223,  42)}
