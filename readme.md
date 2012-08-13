@@ -28,6 +28,7 @@ Using a line of text from the screenshots above:
 * Anchor text should be indicated like this: `<a data-anchor=x>on which most syndicated and large-market political talk radio is modeled</a>`
 * Footnotes should be indicated like this: `<aside data-footnote=x><p>PURELY INFORMATIVE  It&rsquo;s true that there are, ...</p></aside>`
 
+Note that the anchor text is an inline element (just like a normal link), but that the aside is set up as a block-level element (like a div). So inside your `<aside>`, you'll probably want to use `<p>` tags to give the content some spacing off the "wall" of the aside block.
 
 ### Your CSS
 
